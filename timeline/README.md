@@ -6,7 +6,7 @@ This folder contains a timeline of my learning progress.
 - Each file is named based on the date (YYYY-MM-DD).
 - The `YYYY-MM-DD.md` file explains the practice code.
 - The `YYYY-MM-DD.ipynb` file contains runnable code in a notebook format.
-- The `chatbot.py` is a file that can be run by Streamlit.
+- The `<>_streamlit.py` is a file that can be run by Streamlit.
 
 ## 📂 Timeline
 - [2025-01-21](./2025-01-21/2025-01-21.md) - Creating my first page with Streamlit.
@@ -20,4 +20,6 @@ This folder contains a timeline of my learning progress.
 - [2025-02-05](./2025-02-05/2025-02-05.md) - Chess chatbot using tools.
 - [2025-02-11](./2025-02-11/2025-02-11.md) - Interaction between nodes with state, conditional edges and using tools.
 - [2025-02-12](./2025-02-12/2025-02-12.md) - Implementing chat agent.
-- [2025-02-13](./2025-02-13/2025-02-13/md) - Develop the code as a ReAct agent !!
+- [2025-02-13](./2025-02-13/2025-02-13/md) - Develop the code as a ReAct agent.
+  
+- [2025-02-19](./2025-02-19/2025-02-19.md) - Save conversation content in json file for individual thread ID and chatbot page
