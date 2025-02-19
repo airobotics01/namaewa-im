@@ -1,7 +1,6 @@
 import os
 import openai
 import streamlit as st
-from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from langgraph.prebuilt import create_react_agent
 from langgraph.checkpoint.memory import MemorySaver
@@ -10,9 +9,6 @@ from langchain.memory import ConversationBufferMemory
 from langchain_community.tools import DuckDuckGoSearchRun
 from langchain_core.tools import tool
 import random
-
-# ✅ 환경 변수 로드
-load_dotenv()
 
 # ✅ Streamlit 페이지 설정
 st.set_page_config(page_title="🤖 AI 챗봇", layout="wide")

@@ -14,7 +14,7 @@ load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # ✅ LLM 설정 (GPT-4o 사용)
-llm = ChatOpenAI(model="gpt-4o-mini", max_tokens= 150, api_key=os.getenv("OPENAI_API_KEY"))
+llm = ChatOpenAI(model="gpt-4o-mini", max_tokens= 150)
 
 # ✅ 체크포인트 저장소 (대화 상태 저장)
 store = InMemoryStore()
@@ -115,6 +115,7 @@ def print_stream(graph, inputs, config):
 def run_agent():
     thread_id = input("\n✅당신의 닉네임을 입력하세요: ").strip()
     config = {"configurable": {"thread_id": thread_id}}
+    graph.get_state(config)
 
     while True:
         user_input = input("\n사용자 입력: ").strip()

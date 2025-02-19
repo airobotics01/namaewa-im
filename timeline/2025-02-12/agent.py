@@ -14,7 +14,7 @@ from langchain_experimental.tools import PythonREPLTool
 # 환경 변수 로드
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
-llm = ChatOpenAI(model="gpt-4", api_key=os.getenv("OPENAI_API_KEY"))
+llm = ChatOpenAI(model="gpt-4o-mini", max_tokens = 150)
 
 # 감정 분석기 초기화
 nltk.download("vader_lexicon")
